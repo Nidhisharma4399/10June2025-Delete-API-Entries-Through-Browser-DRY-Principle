@@ -165,8 +165,9 @@
         //Function calling 
         //function calling is a one time process
         function deleteElement(e){//formal argument
-             console.log(e);
-            const delId = e.dataset.delId;
+            console.log(e);
+            const delId = e.getAttribute('data-del-Id');
+            //const delId = e.dataset.delId;
              console.log("Delete Id :" , delId)
             // Send DELETE request to Server
              console.log("I am inside deleteElement Function");
