@@ -182,11 +182,8 @@
                 confirmButtonText: "Yes, delete it!"
             }).then((result) => {
                     if (result.isConfirmed) {
-
                          xhr.open("DELETE",`${BASE_URL}/api/details/${delId}`); //by string interpolation
-
                          xhr.send();
-                         
                          e.closest('tr').remove();//to remove the entry from browser
                          console.log("File Is Deleted....!!!");
 
